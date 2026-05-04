@@ -3324,7 +3324,7 @@ h6, .h6 {
           background: var(--primary-color); } }
       .main-menu .navbar-collapse li a:hover {
         color: var(--primary-color);
-        text-decoration: underline; }
+        text-decoration: none; }
         .main-menu .navbar-collapse li a:hover:after {
           opacity: 1; }
     .main-menu .navbar-collapse li.current > a, .main-menu .navbar-collapse li.current-menu-item > a {
@@ -3990,9 +3990,13 @@ h6, .h6 {
   border-radius: 32px;
   color: var(--black-color);
   padding: 10px 25px 10px 15px; }
-  .about-btn img {
+  .about-btn img,
+  .about-btn > i:first-child {
     border-radius: 50%;
     margin-right: 15px; }
+  .about-btn > i:first-child {
+    color: var(--primary-color);
+    font-size: 20px; }
   .about-btn h6 {
     font-weight: 700;
     color: var(--black-color);

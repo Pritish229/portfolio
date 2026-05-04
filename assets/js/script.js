@@ -105,12 +105,14 @@
         
         // ## OnePage Nav Scroll
         $(".onepage a").on('click', function(e){
-            e.preventDefault();
             var hash = this.hash;
-            var position = $(hash).offset().top;
-            $("html").animate({
-                scrollTop : position
-            },1000);
+            if (hash && $(hash).length) {
+                e.preventDefault();
+                var position = $(hash).offset().top;
+                $("html").animate({
+                    scrollTop : position
+                },1000);
+            }
         });
         
         
